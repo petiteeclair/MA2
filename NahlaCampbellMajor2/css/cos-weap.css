@@ -1,0 +1,104 @@
+/*imports normalize*/
+@import "normalize.css";
+
+/*link management*/
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+/*smaller screens*/
+@media screen and (max-width: 500px) {
+  .grid {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: rgba(72, 217, 243, 0.5);
+    grid-gap: 10px;
+  }
+
+  .text {
+    margin-top: 5px;
+    text-align: center !important;
+    color: rgba(5, 28, 41, 0.8);
+    padding: 10px;
+  }
+
+  .start {
+    text-align: justify !important;
+    padding: 10px;
+  }
+
+  .top {
+    margin-top: 10px;
+    padding: 10x;
+  }
+}
+/*larger screens*/
+@media screen and (min-width: 500px) {
+  /*background nav*/
+  nav {
+    /*root directory*/
+    background-image: url(../img/mickeyfunkobanner.jpg);
+    background-size: 100%;
+    background-origin: content;
+    background-repeat: no-repeat;
+    font-family: "Press Start 2P", cursive;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: rgba(72, 217, 243, 0.5);
+    grid-gap: 10px;
+  }
+
+  .text {
+    grid-column: 1/4;
+    text-align: center !important;
+    color: rgba(5, 28, 41, 0.8);
+    padding: 10px;
+  }
+
+  .start {
+    grid-column: 1/4;
+    text-align: justify !important;
+    padding: 10px;
+  }
+
+  .top {
+    grid-column: 1/4;
+    margin-top: 5px;
+    padding: 10px;
+  }
+}
+
+.grid-item {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(51, 180, 255, 0.8);
+  font-size: 25px;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.itemKey {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(51, 180, 255, 0.8);
+  font-size: 25px;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  grid-column: 2 / span 2;
+}
